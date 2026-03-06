@@ -1,0 +1,198 @@
+what is Web Scraping?
+
+- what is our work? we will just write a bunch of code and when we run the script
+- Itself that program, It will act like a bot
+- basically, It will access the websites then get the data from the website and,
+- store it in a suitable format for our us that is what web scraping in a nutshell
+- three step process: you access the website, you extract the data, you rearrange and format the data
+
+
+How web scraping is different from web crawling?
+
+Web crawling:
+
+- It start from a URL, they visit each page and extract links to other pages and in a recursive manner
+- this allows the crawlers to build an extensive index of webpages over the entire internet
+- just visit each page recursively and store the links, that is web crawling
+
+web scraping:
+
+- It targets specific information on a webpage
+- It works on only one URL
+- It focused on extracting certain elements from a webpage rather than exploring the links
+
+
+Note to remember:
+
+- crawler from each page will go to every other link in that page and it will go recursively
+- scraper stays in one page and get data of the page, based on predefined instructions that we gave in our code, and the extracted data can be stored as a csv file in a database etc
+
+How does web scraping works?
+
+- It is a three step process:
+- the code will interact with the website and get the html structure
+- from  the html structure, we will extract the required data
+- clean the extracted data and store it in any desired format
+
+
+Types of Web Scraping:
+----------------------
+
+(1) html parsing
+
+- It is used for basic html structures
+** HTML Parsing, it is used for basic HTML structures.
+
+(2) Data Object Model (DOM)
+
+- for websites that have heavy javascript code with lots of elements
+- where we have to identify the structure of the code and extract the data
+** DOM Parsing, for websites that have heavy JavaScript code with lots of elements, where we have to identify the structure of the code and extract the data.
+
+(3) Headless Browser Scraping
+
+- now, this is nothing but, when we visit a website
+- we don't get GUI, but we get a raw code of it
+- we can scrape the data through the raw code 
+** Headless Browsing. This is nothing but when we visit a website, we won't get a GUI, but it will have its raw code and through that code we will scrape the data.
+
+(4) API based scraping
+
+- where we scrape the data of website through websites API
+- It is considered as very efficient and an ethical way of scraping data
+** API Based Scraping, where we extract their data through the APIs of the website, which is considered a very efficient and an ethical way of scraping data.
+
+(5) Image and Multimedia scraping:
+
+- we will target the <img> tags specifically
+- to extract and download the data
+** Image and Videos. We will target the IMG tags specifically to extract and download the data.
+
+
+
+Ethical Considerations:
+-----------------------
+
+- In simple language, we are saying that whenever we are going to extract data from a website
+- It is very crucial that we follow certain guidelines which are inline with the legal obligations. 
+- And that we do not violate any privacy issues and any property issues.
+
+- So, what are the various rules and laws applicable? 
+- What are the things to keep in mind? 
+- What not to do and what to do?
+
+To understand all these things, we'll go over a few topics right now.
+
+
+
+(1) compliance with website terms & services
+
+- We need explicit permission
+
+(2) Respect for data ownership and intellectual property
+
+- If you get permission, make sure to stick and abide by the terms and conditions and policies
+
+(3) Data privacy and user content
+
+- If you are extracting sensitive information, double or triple ensure that you are in line with the policies and regulations in place
+ 
+(4) Rate limits and server loads
+
+- If you are frequently scraping, it's a good habit to ensure some time space between the multiple requests
+
+(5) Transparency and disclosure
+
+- Always be transparent with your intent of the usage of the data and ensure that you are disclosing your source on any public platform
+
+
+Advantages of web scraping:
+---------------------------
+
+(1) Efficient data collection and processing
+
+- it's efficient. Fast process. It saves a lot of time. 
+
+(2) Real-Time Data access
+
+- It can give access to real-time data. We can frequently monitor changes.
+
+(3) cost-effective market research
+
+- It's cost-effective compared to the manual ways, the traditional ways. 
+
+(4) Enhanced decision-making through data-driven insights
+
+- Scraping gives us an abundance of data that we can use to make data-driven decisions, evidence-based decisions.
+
+(5) Detecting and Analyzing Fraudulent activities
+
+- We can identify fraudulent activities
+
+(6) Enhanced SEO and Content Strategy
+
+- and we can also better understand our competitors in the marketplace.
+  
+
+Disadvantages of web scraping:
+------------------------------
+
+(1) Legal and ethical risks
+
+- If we are scraping and breaking the terms and conditions, that can lead to major legal problems and penalties.
+
+(2) IP Blocking and Bot Decision:
+
+- Today's websites use many safeguarding measures, like captures and rate limits, so that our scripts can be blocked from accessing their content. This is a disadvantage, and if we want to bypass it, that's a very expensive measure.
+
+(3) Data Accuracy and Consistency issues:
+
+
+- assume We bypassed it, and the permission was also get. If we are extracting data, it may also happen that the company whose websites we use to scrape wants to make it look better to enhance the user experience. So as the website content changes, scripts will break. Older scripts will break, and scraping scripts and code will break. We will also have to constantly update that code, which can be time-consuming and expensive.
+
+(4) Incompatibility with dynamic and javascript heavy content:
+
+- Nowadays a lot of JavaScript is used, right? They use frameworks like React or Angular, in which websites can be built very easily, but at the same time their complexity is also very high. So understanding, learning, and coding such websites can be very tough and complicated, and we have to make use of more advanced tools like Puppeteer, Selenium, which will again right it will slow down the overall process. Tough as it may be, it will also take a lot of time, right?
+
+(5) Environmental Impact:
+
+- And on the same hand, the complexity of the website has increased, a lot of data is required, so it is obvious that a lot of computation resources are also required. so, as a result, indirectly it affects the environment as well, right?
+
+
+
+Alternatives of web scraping:
+-----------------------------
+
+(1) Public APIS
+
+- When talking about the alternatives, we discussed about Public APIs. We saw that they are the safest and the best legal option because their data is also clean and well-structured.
+
+(2) RSS(Real Simple syndication) Feeds
+
+- Next, we have RSS feeds. What’s their advantage? Why are they a good alternative to even consider? Because the updates from all our target websites are available in one single place. We can get all of that data at once. That’s the advantage of RSS feeds.
+
+(3) Public Datasets
+
+- Next, we have public datasets. Why are they a good alternative? Because data has already been collected and is publicly available, so we just have to go and download it. And who knows, the portals where the datasets are hosted might also update their data consistently, maybe monthly or quarterly. You know, who knows?
+
+- So when we extract the data, all that data is already available. Secondly, its format is also convenient: CSV files, mainly Excel files. This saves a lot of time on data collection and gathering.
+
+(4) Manual Data collection
+
+- Next, manual data collection is not a good practice, but why would we consider this in the context of web scraping? Because even if we do not have technical expertise, we do not have computational resources. And if you're also worried about the legal aspects of web scraping, then manual collection might just help. And if it's done for a small scale data, then all the more better, right?
+
+(5) Licensed partnership with data owners 
+
+- And finally, licensed partnerships with the ownership's are common if there are websites that host the data and if we need that data for our purposes, then if there is a partnership with such organizations that gives us an extra edge because we get access to the latest data which is not publicly available till now. Right? That's the thing.
+
+- And the best part is, if there is a partnership, then we'll be able to get data directly, right? We do not need to seek any extra permission, we don't have to worry about any legal aspects, we don't have to worry about the terms and services because there is a partnership, so they're taking the data themselves, right? That's the best part about it, okay?
+
+
+
+
+
+
+
+
+
+
